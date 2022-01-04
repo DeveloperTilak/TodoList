@@ -139,6 +139,6 @@ if (port == null || port == "") {
   port = 8000;
 };
 
-app.listen(8000, function(req, res){
+app.listen(port, function(req, res){
   console.log("The server has started Successfully.");
 });
