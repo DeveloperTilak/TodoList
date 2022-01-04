@@ -134,6 +134,11 @@ app.post("/delete", function(req, res){
 });
 
 
-app.listen(5000, function(req, res){
-  console.log("The server is listing to port on 5000.");
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+};
+
+app.listen(8000, function(req, res){
+  console.log("The server has started Successfully.");
 });
